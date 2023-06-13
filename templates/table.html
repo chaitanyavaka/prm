@@ -1,0 +1,25 @@
+{% extends 'homepage.html' %}
+{% block addcss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='table.css')}}">
+{% endblock %}
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>link</th>
+                <th>Date</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Codegnan It Solutions</td>
+                <td>view</td>
+                <td>22/23</td>
+                <td><a href='#'>update</a></td>
+                <td><a href='#'>delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
